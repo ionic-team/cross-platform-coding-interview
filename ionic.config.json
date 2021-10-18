@@ -1,0 +1,7 @@
+{
+  "name": "cross-platform-coding-interview",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
