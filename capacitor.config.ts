@@ -1,10 +1,13 @@
-import { CapacitorConfig } from '@capacitor/cli';
+import { CapacitorConfig } from "@capacitor/cli";
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'cross-platform-coding-interview',
-  webDir: 'build',
-  bundledWebRuntime: false
+  appId: "io.ionic.crossplatform.interview",
+  appName: "ToDo App!",
+  webDir: "build",
+  bundledWebRuntime: false,
+  server: {
+    url: "http://localhost:8100",
+  },
 };
 
 export default config;

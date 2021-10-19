@@ -1,6 +1,9 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "cross-platform-coding-interview",
+	"appId": "io.ionic.crossplatform.interview",
+	"appName": "ToDo App!",
 	"webDir": "build",
-	"bundledWebRuntime": false
+	"bundledWebRuntime": false,
+	"server": {
+		"url": "http://localhost:8100"
+	}
 }
