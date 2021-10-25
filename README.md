@@ -4,8 +4,8 @@
 
 1. `npm install`
 1. `npm run build`
-1. `npm cap sync ios`
-1. `npm cap open ios`
+1. `npx cap sync ios`
+1. `npx cap open ios`
 1. `npm install -g @ionic/cli`
 1. `ionic serve --no-open`
 
