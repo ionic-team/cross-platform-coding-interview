@@ -5,9 +5,9 @@ const config: CapacitorConfig = {
   appName: "ToDo App!",
   webDir: "build",
   bundledWebRuntime: false,
-  server: {
-    url: "http://localhost:8100",
-  },
+  // server: {
+  //   url: "http://localhost:8100",
+  // },
 };
 
 export default config;

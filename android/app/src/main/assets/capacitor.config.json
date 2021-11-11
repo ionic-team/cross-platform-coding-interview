@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.crossplatform.interview",
+	"appName": "ToDo App!",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
