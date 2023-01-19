@@ -2,7 +2,6 @@
 
 ## Setup
 
-1. `export NODE_OPTIONS=--openssl-legacy-provider`
 1. `npm install`
 1. `npm run build`
 1. `npx cap sync [ios|android]`
