@@ -71,7 +71,6 @@ function CreateToDo() {
           <IonItem>
             <IonLabel>Due Date</IonLabel>
             <IonDatetime
-              displayFormat="MMM DD, YYYY h:mm a"
               placeholder="Select Date"
               value={
                 dueDate !== undefined
@@ -79,7 +78,7 @@ function CreateToDo() {
                   : undefined
               }
               onIonChange={(e) =>
-                setDueDate(new Date(e.detail.value!).getTime())
+                setDueDate(new Date(e.detail.value as string).getTime())
               }
             ></IonDatetime>
           </IonItem>
