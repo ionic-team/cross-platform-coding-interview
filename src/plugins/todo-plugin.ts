@@ -1,4 +1,4 @@
-import { registerPlugin } from "@capacitor/core";
+import { registerPlugin, WebPlugin } from "@capacitor/core";
 
 export interface ToDoItem {
   id: number;
@@ -18,6 +18,24 @@ export interface ToDoPlugin {
   delete(options: { id: number }): Promise<void>;
 }
 
-const ToDo = registerPlugin<ToDoPlugin>("ToDo");
+class ToDoPluginWeb extends WebPlugin implements ToDoPlugin {
+  getAll(): Promise<{ todos: ToDoItem[]; }> {
+    throw new Error("Method not implemented.");
+  }
+  getOne(options: { id: number; }): Promise<{ todo: ToDoItem; }> {
+    throw new Error("Method not implemented.");
+  }
+  upsert(todo: UpsertOptions): Promise<void> {
+    throw new Error("Method not implemented.");
+  }
+  delete(options: { id: number; }): Promise<void> {
+    throw new Error("Method not implemented.");
+  }
+
+}
+
+const ToDo = registerPlugin<ToDoPlugin>("ToDo", {
+  web: new ToDoPluginWeb(),
+});
 
 export default ToDo;
