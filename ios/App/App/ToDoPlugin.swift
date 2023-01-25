@@ -48,7 +48,7 @@
              call.reject("Malformed request, missing option id")
              return
          }
-         call.resolve(["todo": mockedData[id]])
+         call.resolve(["todo": mockedData[id] as Any])
      }
 
      @objc func upsert(_ call: CAPPluginCall) {
