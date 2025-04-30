@@ -10,6 +10,8 @@ PODS:
     - Capacitor
   - CapacitorStatusBar (7.0.1):
     - Capacitor
+  - CapacitorTodoPlugin (0.0.1):
+    - Capacitor
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
@@ -18,6 +20,7 @@ DEPENDENCIES:
   - "CapacitorHaptics (from `../../node_modules/@capacitor/haptics`)"
   - "CapacitorKeyboard (from `../../node_modules/@capacitor/keyboard`)"
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
+  - CapacitorTodoPlugin (from `../../plugins/ToDoPlugin`)
 
 EXTERNAL SOURCES:
   Capacitor:
@@ -32,6 +35,8 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/keyboard"
   CapacitorStatusBar:
     :path: "../../node_modules/@capacitor/status-bar"
+  CapacitorTodoPlugin:
+    :path: "../../plugins/ToDoPlugin"
 
 SPEC CHECKSUMS:
   Capacitor: 106e7a4205f4618d582b886a975657c61179138d
@@ -40,7 +45,8 @@ SPEC CHECKSUMS:
   CapacitorHaptics: 70e47470fa1a6bd6338cd102552e3846b7f9a1b3
   CapacitorKeyboard: 969647d0ca2e5c737d7300088e2517aa832434e2
   CapacitorStatusBar: 275cbf2f4dfc00388f519ef80c7ec22edda342c9
+  CapacitorTodoPlugin: e311c69bc7ee0de4007a5d45cc7989e4da9b10e5
 
-PODFILE CHECKSUM: f8c95c38f42283ff8d7c6bf6fa1435ecdce85ae9
+PODFILE CHECKSUM: bcc7f6bd000ac3e2796060c98dc6699e914bdbe4
 
 COCOAPODS: 1.16.2

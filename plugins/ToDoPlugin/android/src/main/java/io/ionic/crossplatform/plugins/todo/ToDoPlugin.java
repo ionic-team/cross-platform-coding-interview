@@ -1,4 +1,4 @@
-package io.ionic.crossplatform.interview;
+package io.ionic.crossplatform.plugins.todo;
 
 import com.getcapacitor.JSArray;
 import com.getcapacitor.JSObject;
@@ -11,9 +11,8 @@ import org.json.JSONException;
 
 import java.util.List;
 
-
 @CapacitorPlugin(name = "ToDo")
-public class TodoPlugin extends Plugin {
+public class ToDoPlugin extends Plugin {
 
     protected JSArray getMockData() {
         JSArray todos = new JSArray();

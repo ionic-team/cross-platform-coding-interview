@@ -1,6 +1,6 @@
 import ToDoListItem from "../components/ToDoListItem";
 import { createRef, useState } from "react";
-import ToDo, { ToDoItem } from "../plugins/todo-plugin";
+import { ToDo, ToDoItem } from "capacitor-todo-plugin";
 import {
   IonButton,
   IonContent,

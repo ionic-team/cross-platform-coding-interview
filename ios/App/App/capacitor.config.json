@@ -7,6 +7,7 @@
 		"AppPlugin",
 		"HapticsPlugin",
 		"KeyboardPlugin",
-		"StatusBarPlugin"
+		"StatusBarPlugin",
+		"ToDoPlugin"
 	]
 }

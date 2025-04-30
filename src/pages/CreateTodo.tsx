@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ToDo, { ToDoItem } from "../plugins/todo-plugin";
+import { ToDo, ToDoItem } from "capacitor-todo-plugin";
 import {
   IonBackButton,
   IonButton,
