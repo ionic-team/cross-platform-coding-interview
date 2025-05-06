@@ -14,5 +14,9 @@
 	{
 		"pkg": "@capacitor/status-bar",
 		"classpath": "com.capacitorjs.plugins.statusbar.StatusBarPlugin"
+	},
+	{
+		"pkg": "capacitor-todo-plugin",
+		"classpath": "io.ionic.crossplatform.plugins.todo.ToDoPlugin"
 	}
 ]

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ToDo, { ToDoItem } from "../plugins/todo-plugin";
+import { ToDo, ToDoItem } from "capacitor-todo-plugin";
 import {
   IonBackButton,
   IonButton,
@@ -25,12 +25,14 @@ function CreateToDo() {
 
   const params = useParams<{ id?: string }>();
 
-  useIonViewWillEnter(async () => {
+  useIonViewWillEnter(() => {
     if (params.id !== undefined) {
-      const { todo } = await ToDo.getOne({ id: parseInt(params.id, 10) });
-      setTodo(todo);
-      setName(todo.name);
-      setDueDate(todo.dueDate);
+      ToDo.getOne({ id: parseInt(params.id, 10) })
+      .then(({ todo }) => {
+        setTodo(todo);
+        setName(todo.name);
+        setDueDate(todo.dueDate);
+      })
     }
   });
 
@@ -71,7 +73,7 @@ function CreateToDo() {
           <IonItem>
             <IonLabel>Due Date</IonLabel>
             <IonDatetime
-              placeholder="Select Date"
+              
               value={
                 dueDate !== undefined
                   ? new Date(dueDate).toISOString()

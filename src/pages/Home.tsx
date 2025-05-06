@@ -1,6 +1,6 @@
 import ToDoListItem from "../components/ToDoListItem";
 import { createRef, useState } from "react";
-import ToDo, { ToDoItem } from "../plugins/todo-plugin";
+import { ToDo, ToDoItem } from "capacitor-todo-plugin";
 import {
   IonButton,
   IonContent,
@@ -11,7 +11,7 @@ import {
   IonRefresherContent,
   IonTitle,
   IonToolbar,
-  useIonViewWillEnter,
+  useIonViewWillEnter
 } from "@ionic/react";
 import "./Home.css";
 
@@ -19,9 +19,11 @@ const Home: React.FC = () => {
   const [todos, setTodos] = useState<ToDoItem[]>([]);
   const ionListRef = createRef<HTMLIonListElement>();
 
-  useIonViewWillEnter(async () => {
-    const { todos } = await ToDo.getAll();
-    setTodos(todos);
+  useIonViewWillEnter(() => {
+    ToDo.getAll()
+    .then(({ todos }) => {
+      setTodos(todos);
+    })
   });
 
   const refresh = async (e?: CustomEvent) => {

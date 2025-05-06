@@ -8,7 +8,7 @@ import {
   IonNote,
 } from "@ionic/react";
 import { useState } from "react";
-import ToDo, { ToDoItem } from "../plugins/todo-plugin";
+import { ToDo, ToDoItem } from "capacitor-todo-plugin";
 import "./ToDoListItem.css";
 
 interface ToDoListItemProps {
